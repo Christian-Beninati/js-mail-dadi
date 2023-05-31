@@ -12,10 +12,12 @@ Mail
 <br>
 
 - Inizio del programma:
+- Recupero gli elementi dal DOM
 - Creo una costante che contiene un array di liste email predefinite.
-- Chiedo all'utente di inserire la propria email utilizzando un prompt() e salvo in una costante.
+- Creo un Event Listener "click" al bottone
+- Ottengo il valore dell'email inserita dall'utente
 - Inizializzo una variabile con il valore false per tenere traccia se l'email inserita dall'utente viene trovata nella array (email predefinite).
 - Avvio un ciclo for che itera attraverso l'array
 - Verifico che l'email corrente nell'iterazione corrisponde all'email inserita dall'utente
-  - Se c'è una corrispondenza, imposto la variabile a true e stampo un messaggio di "benvenuto" nella console
-- Se non c'è una corrispondenza stampo un messaggio "mi dispisce, non puoi accedere" nella console
+  - Se c'è una corrispondenza, imposto la variabile a true e stampo un messaggio di "benvenuto" in pagina
+- Se non c'è una corrispondenza stampo un messaggio "mi dispisce, non puoi accedere" in pagina
