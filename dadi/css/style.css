@@ -1,0 +1,17 @@
+body {
+    background-color: green;
+}
+
+.craps-game {
+    height: 100vh;
+
+}
+
+.button {
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px white;
+}

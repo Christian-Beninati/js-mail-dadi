@@ -1,4 +1,12 @@
 
+// Recuperare l'elemento del DOM
+const playButtonInput = document.getElementById("playButton");
+const scoresElement = document.getElementById("scores");
+const resultElement = document.getElementById("result");
+
+// Aggiungere dell'event listener al click del bottone
+playButtonInput.addEventListener("click", function() {
+
 // Creare una costante con un numero massimo
 const max = 6
 
@@ -8,17 +16,19 @@ const userPlayer = Math.floor(Math.random() * max) + 1;
 // Generare un numero casuale da 1 a 6 per il computer
 const cpuPlayer = Math.floor(Math.random() * max) + 1;
 
-// Stampare i punteggi in console
-console.log("Punteggio giocatore: " + userPlayer);
-console.log("Punteggio computer: " + cpuPlayer);
 
-// Verificare il vincitore e stampare in console
+// Verificare il vincitore e 
+let result = "È un pareggio!";
+
 if (userPlayer > cpuPlayer) {
-  console.log("Il giocatore vince!");
+  result = "Il giocatore vince!";
 
 } else if (cpuPlayer > userPlayer) {
-  console.log("Il computer vince!");
+  result = "Il computer vince!";
+} 
 
-} else {
-  console.log("È un pareggio!");
-}
+// / Inserire il risultato negli elementi del DOM presi in precedenza 
+scoresElement.innerText = `Punteggio giocatore: ${userPlayer}\nPunteggio computer: ${cpuPlayer}`;
+resultElement.innerText = result;
+
+});
